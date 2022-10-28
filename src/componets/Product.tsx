@@ -16,7 +16,7 @@ const Product = ({ product }: ProductProps) => {
       <p>{product.title}</p>
       <span className='font-bold'>Price: {product.price}</span>
       <button
-        className={'py-2 px-4 border w-[125px] h-[42px]' + (details ? ' bg-blue-400 hover:bg-blue-500' : ' bg-yellow-400 hover:bg-yellow-500')}
+        className={'py-2 px-4 border w-[125px] h-[42px] transition duration-300 ease-in-out' + (details ? ' bg-blue-400 hover:bg-blue-500' : ' bg-yellow-400 hover:bg-yellow-500')}
         onClick={handleToggleDetails}
       >
         {details ?  'Hide Details' : 'Show Details'}

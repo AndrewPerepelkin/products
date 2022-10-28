@@ -20,7 +20,7 @@ const ProductPage = () => {
   }
  
   return (
-    <div className={'container mx-auto max-w-2xl' + (loading ? ' flex justify-center h-screen' : ' pt-5')}>
+    <div className={'container mx-auto max-w-2xl mt-[65px]' + (loading ? ' flex justify-center h-screen' : ' pt-5')}>
       {loading && <Loader />}
       {error && <ErrorMessage error={error} />}
       {products.map(product => <Product key={product.id} product={product} />)}
@@ -30,7 +30,7 @@ const ProductPage = () => {
         </Modal>}
       {!modal &&
         <button
-          className='fixed bottom-16 right-16 flex justify-center items-center w-16 h-16 bg-yellow-400 rounded-full hover:bg-yellow-500'
+          className='fixed bottom-16 right-16 flex justify-center items-center w-16 h-16 bg-yellow-400 rounded-full hover:bg-yellow-500 transition ease-in-out duration-300'
           onClick={openModal}
         >
           <img src={plus} alt="Plus" className='w-5 h-5' />

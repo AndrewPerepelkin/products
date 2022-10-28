@@ -100,7 +100,7 @@ const CreateProduct = ({onCreate}: CreateProductProps) => {
       {error && <ErrorMessage error={error} />}
       <button
         type='submit'
-        className='py-2 px-4 border bg-yellow-400 hover:opacity-75 self-center'
+        className='py-2 px-4 border bg-yellow-400  hover:bg-yellow-500 transition ease-in-out duration-300 self-center'
       >
         Create
       </button>
